@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 
 # PyroClient Setup 
-API_ID = int(environ[''])
-API_HASH = environ['']
-BOT_TOKEN = environ['']
+API_ID = int(environ['20902603'])
+API_HASH = environ['79e5caa103a9e9fb0183390b4800845d']
+BOT_TOKEN = environ['7807123947:AAE0_FLfTir6_UmuUGDCDZ2LF-WknnHfx8k']
 
 # Bot settings
 WEB_SUPPORT = bool(environ.get("WEBHOOK", 'True')) # for web support on/off
@@ -23,9 +23,9 @@ UPTIME = time.time()
 
 # Admins, Channels & Users
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6283322330').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002473385674').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '6283322330').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
@@ -33,7 +33,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://ganeshganesh177:17032009@sasukeuchiha.k21bh.mongodb.net/?retryWrites=true&w=majority&appName=Sasukeuchiha")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
@@ -78,12 +78,12 @@ LOG_MSG = "{} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ....✨\n\n🗓️ Dᴀᴛᴇ : {}\n⏰
 
 
 #Newfeatures vars developer - Anshvachhani99 ✨🌸
-DIRECT_GEN_DB = int(os.environ.get("DIRECT_GEN_DB", ""))
+DIRECT_GEN_DB = int(os.environ.get("DIRECT_GEN_DB", "-1002473385674"))
 DIRECT_GEN_URL = os.environ.get("DIRECT_GEN_URL", "")
 DIRECT_GEN = bool(DIRECT_GEN_DB and DIRECT_GEN_URL)
 POST_MODE= bool(environ.get('POST_MODE', True))
-POST_SHORT_API = environ.get('POST_SHORT_API', '69bfe45fc35b6b3178b4b95de9ef1db14a746ce7')
-POST_SHORT_URL = environ.get('POST_SHORT_URL', 'Modijiurl.com')
+POST_SHORT_API = environ.get('POST_SHORT_API', 'bcb93413e5dd9aaf092ab03269420e6f928aae2c')
+POST_SHORT_URL = environ.get('POST_SHORT_URL', 'publicearn.com')
 HOW_TO_POST_SHORT = environ.get('HOW_TO_POST_SHORT', 'https://t.me/How_To_Get_Movie')
 
 
