@@ -79,7 +79,7 @@ LOG_MSG = "{} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ....✨\n\n🗓️ Dᴀᴛᴇ : {}\n⏰
 
 #Newfeatures vars developer - Anshvachhani99 ✨🌸
 DIRECT_GEN_DB = int(os.environ.get("DIRECT_GEN_DB", "-1002473385674"))
-DIRECT_GEN_URL = os.environ.get("DIRECT_GEN_URL", "")
+DIRECT_GEN_URL = os.environ.get("DIRECT_GEN_URL", "jeevanmoviessbot.koyeb.app/")
 DIRECT_GEN = bool(DIRECT_GEN_DB and DIRECT_GEN_URL)
 POST_MODE= bool(environ.get('POST_MODE', True))
 POST_SHORT_API = environ.get('POST_SHORT_API', 'bcb93413e5dd9aaf092ab03269420e6f928aae2c')
