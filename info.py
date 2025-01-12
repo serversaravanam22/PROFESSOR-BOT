@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 
 # PyroClient Setup 
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ[''])
+API_HASH = environ['']
+BOT_TOKEN = environ['']
 
 # Bot settings
 WEB_SUPPORT = bool(environ.get("WEBHOOK", 'True')) # for web support on/off
@@ -78,8 +78,8 @@ LOG_MSG = "{} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ....✨\n\n🗓️ Dᴀᴛᴇ : {}\n⏰
 
 
 #Newfeatures vars developer - Anshvachhani99 ✨🌸
-DIRECT_GEN_DB = int(os.environ.get("DIRECT_GEN_DB", "-1001740524004"))
-DIRECT_GEN_URL = os.environ.get("DIRECT_GEN_URL", "https://web-ikkst7anqzvo.up-de-fra1-k8s-1.apps.run-on-seenode.com/")
+DIRECT_GEN_DB = int(os.environ.get("DIRECT_GEN_DB", ""))
+DIRECT_GEN_URL = os.environ.get("DIRECT_GEN_URL", "")
 DIRECT_GEN = bool(DIRECT_GEN_DB and DIRECT_GEN_URL)
 POST_MODE= bool(environ.get('POST_MODE', True))
 POST_SHORT_API = environ.get('POST_SHORT_API', '69bfe45fc35b6b3178b4b95de9ef1db14a746ce7')
