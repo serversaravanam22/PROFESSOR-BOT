@@ -8,6 +8,7 @@ from typing import Union, List
 from datetime import datetime, timedelta
 from database.users_chats_db import db
 from bs4 import BeautifulSoup
+from urllib.parse import quote_plus
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
